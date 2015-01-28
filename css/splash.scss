@@ -1,0 +1,326 @@
+$body-font: Roboto, sans-serif;
+$troov-pink: #FF8A81;
+$troov-grey: #6C7A89;
+$troov-green: #93CAAB;
+
+@font-face {
+    font-family: "regencie";
+    src: url(/fonts/regencie/RegencieLight.ttf);
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.container-fluid.firstP {
+	background-image: url(../images/doorbell.png);
+	width: 100%;
+
+	
+}
+
+
+.landing {
+	h1{
+		text-align: center;
+		font-family: regencie;
+		color: white;
+		font-size: 12em;
+	}
+	h2 {
+		text-align: center;
+		color: white;
+		font-family: $body-font;
+		font-weight: 100;
+		font-size: 4em;
+		margin-top: 1.5em;
+	}
+	h3 {
+		text-align: center;
+		color: white;
+		font-family: $body-font;
+		font-size: 2em;
+		font-weight: 100;
+		margin-top: 3.5em;
+		margin-bottom: 1.5em;
+	}
+	img {
+		height: 28em;
+		width: 34em;
+	}
+}
+
+.teamPage {
+	h1{
+		text-align: center;
+		color: $troov-grey;
+		font-size: 4em;
+		font-family: $body-font;
+		font-weight: 100;
+	}
+	h4 {
+		text-align: center;
+		color: $troov-grey;
+		font-size: 1.3em;
+		font-family: $body-font;
+		font-weight: 100;
+		width: 25em;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 1em;
+		margin-bottom: 3em;
+	}
+	p {
+		text-align: center;
+		color: $troov-grey;
+		font-weight: 200;
+		margin-top: 2em;
+	}
+	#sean {
+		height: 18em;
+		width: 16em;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#nat {
+		width: 15em;
+		height: 18em;
+		display: block;
+		margin-left: auto;
+		margin-right: auto; 
+	}
+	#mark {
+		width: 14em;
+		height: 18em;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+//footer styling
+
+.foota {
+	img {
+		width: 5em;
+		height: 5em;
+	}
+	p {
+		color: white;
+		font-family: $body-font;
+		font-weight: 300;
+		display: table;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+}
+
+#signUpForm {
+	margin-top: 1.2em;
+}
+#footerBar{
+	background-color: $troov-grey;
+}
+
+#footerSignUp {
+	margin: 0;
+	display: inline;
+}
+#footerSignUpButton {
+	display: inline;
+	margin: 0;
+}
+
+//sign up form styling
+
+.button.signuphere {
+  height: 3em;
+  display: block;
+	margin-left: auto;
+	margin-right: auto;
+  *display: inline;
+  zoom: 1;
+  padding: 6px 20px;
+  cursor: pointer;
+  overflow: visible;
+  font: bold 13px arial, helvetica, sans-serif;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #555366;
+  background-color: $troov-pink;
+  background-image: linear-gradient(top, rgba(255,255,255,1),
+  rgba(255,255,255,0)),
+  url(data:image/png;base64,iVBORw0KGg[...]QmCC); 
+  transition: background-color .2s ease-out;
+  background-clip: padding-box; /* Fix bleeding */
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .3),
+              0 2px 2px -1px rgba(0, 0, 0, .5),
+              0 1px 0 rgba(255, 255, 255, .3) inset;
+  text-shadow: 0 1px 0 rgba(255,255,255, .9);  
+}
+
+.button.signuphere:hover{
+  height: 3em;
+  background-color: #FDADAD;
+  color: #555;
+}
+
+.button.signuphere:active{
+  height: 3em;
+  background: #FFDBDB;
+  position: relative;
+  top: 1px;
+  text-shadow: none;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
+}
+
+.required.email {
+	width: 17em;
+	height: 3em;
+	border: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+//arrow styling
+
+/* the wrapper element that will become the outer circle */
+.arrow-wrap {
+  position:absolute;
+  z-index:1;
+  left:50%;
+
+ display: block;
+ margin-left: -8em;
+ margin-right: auto;
+ top: -15em;
+  background:$troov-grey;
+  width:16em;
+  height:16em;
+  padding:7em 4.7em;
+  border-radius:50%;
+  font-size:0.5em;
+  display:block;
+  box-shadow:0px 0px 5px 0px #333;
+}
+
+/* a triangle to make the main part of the arrow. Adjust the border-color to fit your needs */
+.arrow {
+  float:left;
+  position:relative;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: #ffffff transparent transparent transparent;
+  -webkit-transform:rotate(360deg);/* added for better anti-aliasing on webkit browsers */
+}
+
+/* a pseudo element arrow placed on top of the other one with the same color as the wrapper */
+.arrow:after {
+  content:'';
+  position:absolute;
+  top:-3.2em;
+  left:-3em;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: $troov-grey transparent transparent transparent;
+  -webkit-transform:rotate(360deg);/* added for better anti-aliasing on webkit browsers */
+}
+ @-webkit-keyframes arrows {
+    0% { top:0; }
+    10% { top:12%; }
+    20% { top:0; }
+    30% { top:12%; }
+    40% { top:-12%; }
+    50% { top:12%; }
+    60% { top:0; }
+    70% { top:12%; }
+    80% { top:-12%; }
+    90% { top:12%; }
+    100% { top:0; }
+  }
+  
+  .arrow-wrap .arrow {
+    -webkit-animation: arrows 2.8s 0.4s;
+    -webkit-animation-delay: 3s;
+  }
+
+.arrowIcon {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+ @media only screen and (max-width : 991px) {
+ 	.landing { 
+ 		h1 { 
+ 			font-size: 8em;
+ 			}
+ 		h2 {
+ 			font-size: 2em;
+			margin-top: 0.5em;
+			margin-bottom: 0.5em;
+ 		}	
+ 		h3 {
+ 			margin-top: 1.5em;
+			margin-bottom: 1.5em;
+			font-size: 1.5em;
+ 		}
+ 		img {
+ 			height: 18em;
+			width: 21em;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+ 		}
+ 	}
+
+ 	.signUpForm {
+ 		margin-bottom: 1em;
+ 	}
+
+ 	.teamPage {
+ 		h4 {
+ 			width: 100%;
+ 		}
+ 	}
+
+ 	#footerSignUp {
+ 		display: block;
+ 		margin-left: auto;
+ 		margin-right: auto;
+ 	}
+
+ 	#footerSignUpButton {
+ 		display: block;
+ 		margin-left: auto;
+ 		margin-right: auto;
+ 		margin-bottom: 2em;
+ 	}
+
+ 	.socialMedia {
+ 		img {
+ 			display: block;
+ 			margin-left: auto;
+ 			margin-right: auto;
+ 		}
+ 	}
+}
+
+@media only screen and (min-width : 992px) {
+	.container-fluid.firstP {
+		height: 100%;
+	}
+}
